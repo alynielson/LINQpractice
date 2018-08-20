@@ -10,8 +10,19 @@ namespace PracticeLINQ
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            //Problem 1
+            IEnumerable<string> wordsWithTH = new SubstringTH().FindWordsWithTH(new List<string> { "the", "bike", "this", "it", "tenth", "mathematics" });
+            Console.WriteLine("Problem 1.");
+            foreach (string word in wordsWithTH)
+            {
+                Console.WriteLine(word);
+            }
+            Console.ReadLine();
+
+            //Problem 2
+
+            
+
         }
     }
 }
