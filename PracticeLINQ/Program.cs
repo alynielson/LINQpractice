@@ -20,8 +20,15 @@ namespace PracticeLINQ
             Console.ReadLine();
 
             //Problem 2
+            List<string> withDuplicates = new List<string> { "Mike", "Dan", "Scott", "Nick", "Mike" };
+            IEnumerable<string> noDuplicates = new DeDuplicator().RemoveDuplicates(withDuplicates);
+            foreach (string word in noDuplicates)
+            {
+                Console.WriteLine(word);
+            }
+            Console.ReadLine();
 
-            
+
 
         }
     }
